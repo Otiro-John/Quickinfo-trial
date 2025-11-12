@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code | QuickInfo</title>
+  <link rel="stylesheet" href="qrcode.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script defer src="qrcode.js"></script>
+</head>
+<body>
+  <header>
+    <h1>QR Code Generator</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="uploader.html">Upload</a>
+      <a href="files.html">Files</a>
+      <a href="qrcode.html" class="active">QR Codes</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="qr-container">
+      <h2 id="qrTitle">Generating QR Code...</h2>
+      <div id="qrcode"></div>
+      <p id="qrInfo"></p>
+      <button id="downloadQR">Download QR Code</button>
+      <button id="backBtn">← Back</button>
+    </div>
+  </main>
+</body>
+</html>

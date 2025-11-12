@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Files</title>
+  <link rel="stylesheet" href="uploader.css">
+  <script defer src="uploader.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Upload Files</h1>
+  </header>
+
+  <main>
+    <!-- <form id="uploadForm">
+      <label for="courseId">Course ID:</label>
+      <input type="text" id="courseId" required>
+
+      <label for="fileInput">Select File:</label>
+      <input type="file" id="fileInput" required>
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <p id="uploadMsg"></p> -->
+
+    <form id="uploadForm">
+  <label>Course ID</label>
+  <input type="text" id="courseId" placeholder="e.g., ICT/600/S23" />
+  <label>File</label>
+  <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.ppt,.pptx" />
+  <button type="submit">Upload</button>
+</form>
+<p id="message"></p>
+
+  </main>
+</body>
+</html>
